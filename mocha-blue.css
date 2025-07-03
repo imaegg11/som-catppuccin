@@ -1,0 +1,404 @@
+/* ==UserStyle==
+@name       summer.hackclub.com
+@version    20250702.03.52
+@namespace  ?
+==/UserStyle== */
+@-moz-document url-prefix("https://summer.hackclub.com/") {
+    :root,
+    :host {
+        /* Reds */
+        --color-red-50: #f5e0dc;
+        /* Rosewater */
+        --color-red-100: #f2cdcd;
+        /* Flamingo */
+        --color-red-200: #f5c2e7;
+        /* Pink */
+        --color-red-400: #cba6f7;
+        /* Mauve */
+        --color-red-500: #f38ba8;
+        /* Red */
+        --color-red-600: #eba0ac;
+        /* Maroon */
+        --color-red-700: #fab387;
+        /* Peach (warm accent) */
+        --color-red-800: #f9e2af;
+        /* Yellow (soft highlight) */
+        /* Oranges */
+        --color-orange-50: #f5e0dc;
+        /* Rosewater */
+        --color-orange-100: #fab387;
+        /* Peach */
+        --color-orange-400: #f9e2af;
+        /* Yellow */
+        --color-orange-500: #fab387;
+        /* Peach */
+        --color-orange-600: #eba0ac;
+        /* Maroon */
+        --color-orange-700: #cba6f7;
+        /* Mauve */
+        --color-orange-800: #7f849c;
+        /* Overlay 1 */
+        /* Ambers */
+        --color-amber-50: #f5e0dc;
+        /* Rosewater */
+        --color-amber-200: #f9e2af;
+        /* Yellow */
+        --color-amber-500: #fab387;
+        /* Peach */
+        --color-amber-600: #a6e3a1;
+        /* Green (fresh pop) */
+        --color-amber-700: #94e2d5;
+        /* Teal (cool balance) */
+        --color-amber-800: #89dceb;
+        /* Sky (airy accent) */
+        /* Yellows */
+        --color-yellow-50: #f5e0dc;
+        /* Rosewater */
+        --color-yellow-100: #f9e2af;
+        /* Yellow */
+        --color-yellow-200: #fab387;
+        /* Peach */
+        --color-yellow-500: #f9e2af;
+        /* Yellow */
+        --color-yellow-600: #a6e3a1;
+        /* Green */
+        --color-yellow-700: #94e2d5;
+        /* Teal */
+        --color-yellow-800: #74c7ec;
+        /* Sapphire */
+        /* Greens */
+        --color-green-50: #f5e0dc;
+        /* Rosewater */
+        --color-green-100: #a6e3a1;
+        /* Green */
+        --color-green-200: #94e2d5;
+        /* Teal */
+        --color-green-500: #a6e3a1;
+        /* Green */
+        --color-green-600: #94e2d5;
+        /* Teal */
+        --color-green-700: #89dceb;
+        /* Sky */
+        --color-green-800: #74c7ec;
+        /* Sapphire */
+        /* Blues */
+        --color-blue-50: #f5e0dc;
+        /* Rosewater */
+        --color-blue-100: #89dceb;
+        /* Sky */
+        --color-blue-400: #74c7ec;
+        /* Sapphire */
+        --color-blue-500: #89b4fa;
+        /* Blue */
+        --color-blue-600: #8aadf4;
+        /* Sapphire */
+        --color-blue-700: #89b4fa;
+        /* Blue */
+        --color-blue-800: #7f849c;
+        /* Overlay 1 */
+        /* Purples */
+        --color-purple-50: #cba6f7;
+        /* Mauve */
+        --color-purple-100: #b4befe;
+        /* Lavender */
+        --color-purple-500: #cba6f7;
+        /* Mauve */
+        --color-purple-600: #b4befe;
+        /* Lavender */
+        --color-purple-700: #7f849c;
+        /* Overlay 1 */
+        --color-purple-800: #6c7086;
+        /* Overlay 0 */
+        /* Grays (mapped to Mocha neutrals) */
+        --color-gray-50: #1e1e2e;
+        /* Base */
+        --color-gray-100: #181825;
+        /* Mantle */
+        --color-gray-200: #11111b;
+        /* Crust */
+        --color-gray-300: #313244;
+        /* Surface 0 */
+        --color-gray-400: #45475a;
+        /* Surface 1 */
+        --color-gray-500: #585b70;
+        /* Surface 2 */
+        --color-gray-600: #6c7086;
+        /* Overlay 0 */
+        --color-gray-700: #7f849c;
+        /* Overlay 1 */
+        --color-gray-800: #9399b2;
+        /* Overlay 2 */
+        --color-gray-900: #cdd6f4;
+        /* Text */
+        --color-sidebar: var(--color-gray-300);
+        --color-accent: var(--color-blue-700);
+        --color-gray-300-75: color-mix(in srgb, var(--color-gray-300) 75%, transparent);
+    }
+
+
+    body,
+    .prose,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p,
+    select,
+    div.card-with-gradient > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
+        color: var(--color-gray-900);
+    }
+
+    body::before {
+        background: var(--color-gray-50);
+    }
+
+    .card-with-gradient {
+        border: none;
+        background: var(--color-gray-300) !important;
+        background-image: none;
+    }
+
+    .card-subtitle {
+        color: var(--color-gray-500);
+    }
+
+    .card-content {
+        color: var(--color-gray-600);
+    }
+
+    .card-footer {
+        border-top: 1px solid var(--color-gray-300);
+    }
+
+    /* Sidebar */
+    div.transition-all:nth-child(1) {
+        background: var(--color-sidebar);
+        color: var(--color-gray-900);
+    }
+
+    .p-4 path {
+        fill: var(--color-sidebar);
+    }
+
+    div.bg-linear-to-b {
+        background: var(--color-sidebar);
+    }
+
+    path[stroke-width] {
+        stroke: var(--color-accent);
+    }
+
+    select {
+        border-color: var(--color-accent);
+    }
+
+    /* Icons */
+    li.flex path,
+    svg[data-sidebar-target="pinIcon"] path {
+        fill: var(--color-accent);
+    }
+
+    /* Gallery Icon */
+    [data-tab="gallery"] path {
+        fill: var(--color-accent);
+    }
+
+    /** Logout **/
+    div.items-start:nth-child(2) > div:nth-child(2) > form:nth-child(1) > button:nth-child(2) > span:nth-child(1) > svg:nth-child(1) > g:nth-child(1) > path:nth-child(1) {
+        fill: var(--color-red-500);
+    }
+
+    /* Hover bloops */
+    .bg-\[\#C7A077\],
+    .bg-\[\#4A2D24\]\/10 {
+        background: var(--color-gray-600);
+    }
+
+    .marble-button {
+        background: var(--color-accent);
+        box-shadow: 0 6px 0 var(--color-accent), 0 8px 15px rgba(0, 0, 0, 0.2);
+        border-color: var(--color-accent);
+    }
+
+    .marble-button:hover {
+        background: var(--color-accent);
+        box-shadow: 0 8px 0 var(--color-accent), 0 10px 20px rgba(0, 0, 0, 0.25);
+        border-color: var(--color-accent);
+    }
+
+    .border-\[\#E4DCC6\],
+    .border,
+    textarea {
+        border-color: var(--color-accent);
+    }
+
+    /* Music Toggle (Half sure its broken lmfao) */
+    #music-toggle {
+        background: var(--color-accent) !important;
+        border-color: var(--color-gray-300) !important;
+    }
+}
+
+@-moz-document url-prefix("https://summer.hackclub.com/shop") {
+    div.card-with-gradient > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
+        color: var(--color-gray-900);
+    }
+
+    select {
+        background: var(--color-gray-300);
+    }
+}
+
+@-moz-document url-prefix("https://summer.hackclub.com/explore") {
+    button.text-2xl:nth-child(2) > span:nth-child(1) > svg:nth-child(1) > path:nth-child(1),
+    .gap-16 > button:nth-child(1) > span:nth-child(1) > svg:nth-child(1) > path:nth-child(1) {
+        fill: var(--color-accent);
+    }
+
+    /* Projects */
+    #projects-grid path {
+        fill: var(--color-sidebar);
+    }
+
+    #projects-grid > a > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1),
+    #projects-grid > a > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+        background: var(--color-sidebar);
+    }
+
+    /** Star **/
+    #devlogs-list > div.card-with-gradient > div.card-content > div.ml-4.cursor-pointer > div g > path {
+        fill: var(--color-yellow-500);
+    }
+
+    /* Time spent working on project */
+    .text-\[\#B89576\] {
+        color: var(--color-gray-600);
+    }
+
+    /* Literally the "worked on" text (Why is it a different color???) */
+    .text-\[\#865c39\] {
+        color: var(--color-accent);
+    }
+}
+
+@-moz-document url-prefix("https://summer.hackclub.com/my_projects") {
+    .grid > a > div:nth-child(1),
+    div.bg-\[\#F3ECD8\]:nth-child(5) {
+        background: var(--color-gray-300);
+        border-color: var(--color-accent);
+    }
+
+    /* The create project bg */
+    .bg-\[\#F3ECD8\] {
+        background: var(--color-gray-300);
+    }
+
+    /* To lazy to do the create project button */
+    [data-modal-type="create-project"] {}
+}
+
+@-moz-document url-prefix("https://summer.hackclub.com/projects") {
+    .bg-\[\#F3ECD8\] {
+        background: var(--color-gray-300);
+    }
+
+    .card-content {
+        padding: 4px;
+        border: 2px solid var(--color-accent);
+        border-radius: 5px;
+    }
+
+    /*     The ship, edit, and delete buttons */
+    button > span > svg > path {
+        fill: currentColor !important;
+    }
+
+    /*  The image on the top */
+    .from-\[\#F3ECD8\] {
+        --tw-gradient-from: var(--color-gray-300);
+    }
+
+    #ba:hover > #bh {
+        background: var(--color-gray-300-75);
+    }
+
+    #ba:hover #bt {
+        color: var(--color-gray-900) !important;
+    }
+
+    #ba:hover * {
+        cursor: pointer !important;
+    }
+
+    #bt {
+        color: transparent;
+    }
+
+    /*  Below are the stars   */
+    [clip-path="url(#clip0_35_306)"] path {
+        fill: currentColor;
+    }
+
+    .text-vintage-red {
+        color: var(--color-blue-700);
+    }
+
+    /*  Text for how long you've worked on the project */
+    .text-\[\#B89576\] {
+        color: var(--color-gray-600);
+    }
+}
+
+@-moz-document url-prefix("https://summer.hackclub.com/votes") {
+    div[data-project-index] {
+        background: var(--color-gray-300);
+    }
+
+    path {
+        fill: var(--color-sidebar);
+    }
+
+    .sm\:p-2 {
+        background: var(--color-sidebar);
+    }
+
+    /* Demo and Repo buttons*/
+    .bg-\[\#FFE8CD\] {
+        background: var(--color-accent);
+    }
+
+    /* Click me please music thingy */
+    .bg-\[\#F3ECD8\] {
+        background: var(--color-gray-200);
+    }
+
+    /* Click me please music text */
+    .bg-\[\#F3ECD8\] div {
+        color: var(--color-gray-900) !important;
+    }
+
+    /* Demo and Repo button svgs*/
+    .bg-\[\#FFE8CD\] path:nth-child(2) {
+        fill: currentColor;
+    }
+
+    .bg-\[\#FFE8CD\] path:nth-child(1) {
+        fill: transparent;
+    }
+
+    /* Demo and Repo button text */
+    .text-\[\#4A2D24\] {
+        color: var(--color-gray-200);
+    }
+
+    /* Time spent working on project */
+    .text-\[\#B89576\] {
+        color: var(--color-gray-600);
+    }
+
+    /* Textarea */
+    #vote_explanation {
+        color: var(--color-gray-900);
+    }
+}
