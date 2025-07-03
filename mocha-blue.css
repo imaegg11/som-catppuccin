@@ -312,6 +312,11 @@
         border-radius: 5px;
     }
 
+    /* Side icons */
+    [data-sidebar-target="links"] path {
+        fill: var(--color-accent) !important;
+    }
+
     /*     The ship, edit, and delete buttons */
     button > span > svg > path {
         fill: currentColor !important;
