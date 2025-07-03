@@ -131,6 +131,10 @@
         --color-gray-900: #cdd6f4;
         /* Text */
         --color-sidebar: var(--color-gray-300);
+        /* IF YOU ARE CHANGING THIS (--color-accent), GO TO LINE 297 OR JUST THE PROJECTS SECTION AND CHANGE THAT AS WELL 
+    USEFUL WEBSITES FOR IT
+    https://medium.com/@union_io/swapping-fill-color-on-image-tag-svgs-using-css-filters-fa4818bf7ec6
+    https://codepen.io/sosuke/pen/Pjoqqp */
         --color-accent: var(--color-blue-700);
         --color-gray-300-75: color-mix(in srgb, var(--color-gray-300) 75%, transparent);
     }
@@ -181,10 +185,6 @@
         fill: var(--color-sidebar);
     }
 
-    div.bg-linear-to-b {
-        background: var(--color-sidebar);
-    }
-
     path[stroke-width] {
         stroke: var(--color-accent);
     }
@@ -194,8 +194,7 @@
     }
 
     /* Icons */
-    li.flex path,
-    svg[data-sidebar-target="pinIcon"] path {
+    li.flex path {
         fill: var(--color-accent);
     }
 
@@ -237,6 +236,10 @@
     #music-toggle {
         background: var(--color-accent) !important;
         border-color: var(--color-gray-300) !important;
+    }
+
+    button {
+        cursor: pointer;
     }
 }
 
@@ -347,6 +350,39 @@
     /*  Text for how long you've worked on the project */
     .text-\[\#B89576\] {
         color: var(--color-gray-600);
+    }
+
+    /* The thingy on the side of the project devposts */
+    div.align-center > img:nth-child(1) {
+        filter: brightness(0) saturate(100%) invert(61%) sepia(69%) saturate(474%) hue-rotate(189deg) brightness(103%) contrast(96%) !important;
+        /* THIS NEEDS TO BE CHANGED WHEN --color-accent CHANGES */
+    }
+
+    .border-5 {
+        border-color: var(--color-accent);
+    }
+
+    /* Update button at the bottom when editing */
+    [name="commit"] {
+        cursor: pointer;
+    }
+
+    /* The forms when editing your project */
+    input:not([name="commit"]),
+    textarea,
+    select {
+        background: var(--color-gray-300);
+    }
+
+    /* The fake button for ysws when editing project */
+    [data-project-form-target="yswsSubmissionCheckboxFake"] path {
+        fill: var(--color-gray-900);
+    }
+
+    div.h-5 {
+        background: var(--color-gray-300);
+        border-color: var(--color-accent);
+        --tw-ring-color: transparent !important;
     }
 }
 
