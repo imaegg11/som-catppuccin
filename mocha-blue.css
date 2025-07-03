@@ -252,7 +252,20 @@
         background: var(--color-gray-300);
     }
 }
-
+@-moz-document url-prefix("https://summer.hackclub.com/votes") {
+    .bg-\[\#F6DBBA\] {
+    	background: #313244 !important
+    }
+    .bg-\[\#FFE8CD\] {
+    	background: #1e1e2e !important;
+    	color: #cdd6f4 !important;
+    }
+    
+    .bg-\[\#FFE8CD\] *:has([fill]) {
+    	fill: #cdd6f4 !important;
+    	border-radius: 50%;
+    }
+}
 @-moz-document url-prefix("https://summer.hackclub.com/explore") {
     button.text-2xl:nth-child(2) > span:nth-child(1) > svg:nth-child(1) > path:nth-child(1),
     .gap-16 > button:nth-child(1) > span:nth-child(1) > svg:nth-child(1) > path:nth-child(1) {
