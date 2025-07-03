@@ -321,6 +321,11 @@
         fill: #cdd6f4;
         border-radius: 50%;
     }
+
+    /*  Voting buttons below    */
+    input[type="radio"]:checked + div {
+        background: color-mix(in srgb, var(--color-accent) 50%, transparent);
+    }
 }
 @-moz-document url-prefix("https://summer.hackclub.com/explore") {
     button.text-2xl:nth-child(2) > span:nth-child(1) > svg:nth-child(1) > path:nth-child(1),
