@@ -131,10 +131,10 @@
         --color-gray-900: #cdd6f4;
         /* Text */
         --color-sidebar: var(--color-gray-300);
-        /* IF YOU ARE CHANGING THIS (--color-accent), GO TO LINE 297 OR JUST THE PROJECTS SECTION AND CHANGE THAT AS WELL 
-    USEFUL WEBSITES FOR IT
-    https://medium.com/@union_io/swapping-fill-color-on-image-tag-svgs-using-css-filters-fa4818bf7ec6
-    https://codepen.io/sosuke/pen/Pjoqqp */
+        /* IF YOU ARE CHANGING THIS (--color-accent), GO TO THE PROJECTS SECTION AND CHANGE THAT AS WELL 
+        USEFUL WEBSITES FOR IT
+        https://medium.com/@union_io/swapping-fill-color-on-image-tag-svgs-using-css-filters-fa4818bf7ec6
+        https://codepen.io/sosuke/pen/Pjoqqp */
         --color-accent: var(--color-blue-700);
         --color-gray-300-75: color-mix(in srgb, var(--color-gray-300) 75%, transparent);
     }
@@ -241,6 +241,62 @@
     button {
         cursor: pointer;
     }
+
+    /*  Idk random border thingy  */
+    .border-saddle-taupe {
+        border-color: var(--color-accent);
+    }
+
+    /*  Comment Modal  */
+    [data-open-modal-type="comment"] > div:nth-child(1) {
+        background: var(--color-gray-300);
+    }
+
+    [data-open-modal-type="comment"] a {
+        color: var(--color-accent);
+    }
+
+    [data-open-modal-type="comment"] [data-action="click->modal#close"]:hover {
+        color: var(--color-accent);
+    }
+
+    /*   Comment Modal Editor   */
+    [data-comment-modal-target="editor"] > div:nth-child(2) > div:nth-child(1) {
+        background: var(--color-gray-300);
+        border-color: var(--color-accent);
+    }
+
+    [data-comment-modal-target="editor"] > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+        background: color-mix(in srgb, var(--color-accent) 15%, transparent);
+        border-color: var(--color-accent);
+    }
+
+    [data-action="undo"] path,
+    [data-action="redo"] path,
+    [data-action="bold"] path,
+    [data-action="italic"] polygon,
+    [data-action="code"] path,
+    [data-action="bulletList"] path,
+    [data-action="orderedList"] line,
+    [data-action="blockquote"] path {
+        fill: var(--color-accent);
+        stroke: var(--color-accent);
+    }
+
+    /* The green buttons that are actually an input for some weird reason */
+    [name="commit"] {
+        cursor: pointer;
+    }
+
+    .bg-saddle-taupe\/40 {
+        background: color-mix(in srgb, var(--color-accent) 40%, transparent);
+    }
+}
+
+@-moz-document url-prefix("https://summer.hackclub.com/campfire") {
+    .text-\[\#E65A42\] {
+        color: var(--color-accent);
+    }
 }
 
 @-moz-document url-prefix("https://summer.hackclub.com/shop") {
@@ -254,16 +310,16 @@
 }
 @-moz-document url-prefix("https://summer.hackclub.com/votes") {
     .bg-\[\#F6DBBA\] {
-    	background: #313244 !important
+        background: #313244;
     }
     .bg-\[\#FFE8CD\] {
-    	background: #1e1e2e !important;
-    	color: #cdd6f4 !important;
+        background: #1e1e2e;
+        color: #cdd6f4;
     }
-    
+
     .bg-\[\#FFE8CD\] *:has([fill]) {
-    	fill: #cdd6f4 !important;
-    	border-radius: 50%;
+        fill: #cdd6f4;
+        border-radius: 50%;
     }
 }
 @-moz-document url-prefix("https://summer.hackclub.com/explore") {
@@ -312,6 +368,24 @@
 
     /* To lazy to do the create project button */
     [data-modal-type="create-project"] {}
+
+    /* The forms when editing your project */
+    input:not([name="commit"]),
+    textarea,
+    select {
+        background: var(--color-gray-300);
+    }
+
+    /* The fake button for ysws when editing project */
+    [data-project-form-target="yswsSubmissionCheckboxFake"] path {
+        fill: var(--color-gray-900);
+    }
+
+    div.h-5 {
+        background: var(--color-gray-300);
+        border-color: var(--color-accent);
+        --tw-ring-color: transparent;
+    }
 }
 
 @-moz-document url-prefix("https://summer.hackclub.com/projects") {
@@ -327,12 +401,12 @@
 
     /* Side icons */
     [data-sidebar-target="links"] path {
-        fill: var(--color-accent) !important;
+        fill: var(--color-accent);
     }
 
     /*     The ship, edit, and delete buttons */
-    button > span > svg > path {
-        fill: currentColor !important;
+    .gap-6 path {
+        fill: currentColor;
     }
 
     /*  The image on the top */
@@ -345,11 +419,11 @@
     }
 
     #ba:hover #bt {
-        color: var(--color-gray-900) !important;
+        color: var(--color-gray-900);
     }
 
     #ba:hover * {
-        cursor: pointer !important;
+        cursor: pointer;
     }
 
     #bt {
@@ -372,17 +446,12 @@
 
     /* The thingy on the side of the project devposts */
     div.align-center > img:nth-child(1) {
-        filter: brightness(0) saturate(100%) invert(61%) sepia(69%) saturate(474%) hue-rotate(189deg) brightness(103%) contrast(96%) !important;
+        filter: brightness(0) saturate(100%) invert(61%) sepia(69%) saturate(474%) hue-rotate(189deg) brightness(103%) contrast(96%);
         /* THIS NEEDS TO BE CHANGED WHEN --color-accent CHANGES */
     }
 
     .border-5 {
         border-color: var(--color-accent);
-    }
-
-    /* Update button at the bottom when editing */
-    [name="commit"] {
-        cursor: pointer;
     }
 
     /* The forms when editing your project */
@@ -400,7 +469,7 @@
     div.h-5 {
         background: var(--color-gray-300);
         border-color: var(--color-accent);
-        --tw-ring-color: transparent !important;
+        --tw-ring-color: transparent;
     }
 }
 
@@ -418,10 +487,9 @@
     }
 
     /* Demo and Repo buttons*/
-    .bg-\[\#FFE8CD\] {
+    /* .bg-\[\#FFE8CD\] {
         background: var(--color-accent);
-    }
-
+    } */
     /* Click me please music thingy */
     .bg-\[\#F3ECD8\] {
         background: var(--color-gray-200);
@@ -429,7 +497,7 @@
 
     /* Click me please music text */
     .bg-\[\#F3ECD8\] div {
-        color: var(--color-gray-900) !important;
+        color: var(--color-gray-900);
     }
 
     /* Demo and Repo button svgs*/
@@ -442,10 +510,9 @@
     }
 
     /* Demo and Repo button text */
-    .text-\[\#4A2D24\] {
+    /* .text-\[\#4A2D24\] {
         color: var(--color-gray-200);
-    }
-
+    } */
     /* Time spent working on project */
     .text-\[\#B89576\] {
         color: var(--color-gray-600);
