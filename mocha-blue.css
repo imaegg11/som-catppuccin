@@ -383,7 +383,15 @@
         /* STUPID all:revert CLASS */
     }
 
-
+    /*  Quick Fix Cause They Broke All The Damn Colours :pensive:   */
+    .text-\[\#4a2d24\] {
+        color: var(--color-gray-900);
+    }
+    
+    .text-\[\#4a2d24\]:nth-child(2) , .text-\[\#4a2d24\] button, .text-\[\#4a2d24\] path {
+        color: var(--color-gray-600);
+    }
+    
 
     /** Star **/
     #devlogs-list > div.card-with-gradient > div.card-content > div.ml-4.cursor-pointer > div g > path {
@@ -433,6 +441,7 @@
         border-color: var(--color-accent);
         --tw-ring-color: transparent;
     }
+        
 }
 
 @-moz-document url-prefix("https://summer.hackclub.com/projects") {
@@ -477,6 +486,15 @@
         color: transparent;
     }
 
+    /*  Quick Fix Cause They Broke All The Damn Colours :pensive:   */
+    .text-\[\#4a2d24\] {
+        color: var(--color-gray-900);
+    }
+    
+    .text-\[\#4a2d24\]:nth-child(2) , .text-\[\#4a2d24\] button, .text-\[\#4a2d24\] {
+        color: var(--color-gray-600);
+    }
+    
     /*  Below are the stars   */
     [clip-path="url(#clip0_35_306)"] path {
         fill: currentColor;
@@ -537,6 +555,7 @@
     /* .bg-\[\#FFE8CD\] {
         background: var(--color-accent);
     } */
+    
     /* Click me please music thingy */
     .bg-\[\#F3ECD8\] {
         background: var(--color-gray-200);
@@ -560,6 +579,7 @@
     /* .text-\[\#4A2D24\] {
         color: var(--color-gray-200);
     } */
+    
     /* Time spent working on project */
     .text-\[\#B89576\] {
         color: var(--color-gray-600);
