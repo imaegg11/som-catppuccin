@@ -1,187 +1,202 @@
 /* ==UserStyle==
-@name       summer.hackclub.com
-@version    20250702.03.52
+@name       Customizable Theme for summer.hackclub.com
+@version    20250706.01.00
 @namespace  ?
 ==/UserStyle== */
+
 @-moz-document url-prefix("https://summer.hackclub.com/") {
     :root,
     :host {
-        /* Reds */
-        --color-red-50: #f5e0dc;
-        /* Rosewater */
-        --color-red-100: #f2cdcd;
-        /* Flamingo */
-        --color-red-200: #f5c2e7;
-        /* Pink */
-        --color-red-400: #cba6f7;
-        /* Mauve */
-        --color-red-500: #f38ba8;
-        /* Red */
-        --color-red-600: #eba0ac;
-        /* Maroon */
-        --color-red-700: #fab387;
-        /* Peach (warm accent) */
-        --color-red-800: #f9e2af;
-        /* Yellow (soft highlight) */
-        /* Oranges */
-        --color-orange-50: #f5e0dc;
-        /* Rosewater */
-        --color-orange-100: #fab387;
-        /* Peach */
-        --color-orange-400: #f9e2af;
-        /* Yellow */
-        --color-orange-500: #fab387;
-        /* Peach */
-        --color-orange-600: #eba0ac;
-        /* Maroon */
-        --color-orange-700: #cba6f7;
-        /* Mauve */
-        --color-orange-800: #7f849c;
-        /* Overlay 1 */
-        /* Ambers */
-        --color-amber-50: #f5e0dc;
-        /* Rosewater */
-        --color-amber-200: #f9e2af;
-        /* Yellow */
-        --color-amber-500: #fab387;
-        /* Peach */
-        --color-amber-600: #a6e3a1;
-        /* Green (fresh pop) */
-        --color-amber-700: #94e2d5;
-        /* Teal (cool balance) */
-        --color-amber-800: #89dceb;
-        /* Sky (airy accent) */
-        /* Yellows */
-        --color-yellow-50: #f5e0dc;
-        /* Rosewater */
-        --color-yellow-100: #f9e2af;
-        /* Yellow */
-        --color-yellow-200: #fab387;
-        /* Peach */
-        --color-yellow-500: #f9e2af;
-        /* Yellow */
-        --color-yellow-600: #a6e3a1;
-        /* Green */
-        --color-yellow-700: #94e2d5;
-        /* Teal */
-        --color-yellow-800: #74c7ec;
-        /* Sapphire */
-        /* Greens */
-        --color-green-50: #f5e0dc;
-        /* Rosewater */
-        --color-green-100: #a6e3a1;
-        /* Green */
-        --color-green-200: #94e2d5;
-        /* Teal */
-        --color-green-500: #a6e3a1;
-        /* Green */
-        --color-green-600: #94e2d5;
-        /* Teal */
-        --color-green-700: #89dceb;
-        /* Sky */
-        --color-green-800: #74c7ec;
-        /* Sapphire */
-        /* Blues */
-        --color-blue-50: #f5e0dc;
-        /* Rosewater */
-        --color-blue-100: #89dceb;
-        /* Sky */
-        --color-blue-400: #74c7ec;
-        /* Sapphire */
-        --color-blue-500: #89b4fa;
-        /* Blue */
-        --color-blue-600: #8aadf4;
-        /* Sapphire */
-        --color-blue-700: #89b4fa;
-        /* Blue */
-        --color-blue-800: #7f849c;
-        /* Overlay 1 */
-        /* Purples */
-        --color-purple-50: #cba6f7;
-        /* Mauve */
-        --color-purple-100: #b4befe;
-        /* Lavender */
-        --color-purple-500: #cba6f7;
-        /* Mauve */
-        --color-purple-600: #b4befe;
-        /* Lavender */
-        --color-purple-700: #7f849c;
-        /* Overlay 1 */
-        --color-purple-800: #6c7086;
-        /* Overlay 0 */
-        /* Grays (mapped to Mocha neutrals) */
-        --color-gray-50: #1e1e2e;
-        /* Base */
-        --color-gray-100: #181825;
-        /* Mantle */
-        --color-gray-200: #11111b;
-        /* Crust */
-        --color-gray-300: #313244;
-        /* Surface 0 */
-        --color-gray-400: #45475a;
-        /* Surface 1 */
-        --color-gray-500: #585b70;
-        /* Surface 2 */
-        --color-gray-600: #6c7086;
-        /* Overlay 0 */
-        --color-gray-700: #7f849c;
-        /* Overlay 1 */
-        --color-gray-800: #9399b2;
-        /* Overlay 2 */
-        --color-gray-900: #cdd6f4;
-        /* Text */
-        --color-sidebar: var(--color-gray-300);
-        /* IF YOU ARE CHANGING THIS (--color-accent), GO TO THE PROJECTS SECTION AND CHANGE THAT AS WELL 
-        USEFUL WEBSITES FOR IT
-        https://medium.com/@union_io/swapping-fill-color-on-image-tag-svgs-using-css-filters-fa4818bf7ec6
-        https://codepen.io/sosuke/pen/Pjoqqp */
-        --color-accent: var(--color-blue-700);
-        --color-gray-300-75: color-mix(in srgb, var(--color-gray-300) 75%, transparent);
+        /* Theme Configuration - Easy to customize */
+        --theme-name: "catppuccin-mocha";
+        
+        /* Primary Color Palette */
+        --primary-50: #f5e0dc;    /* Rosewater */
+        --primary-100: #f2cdcd;   /* Flamingo */
+        --primary-200: #f5c2e7;   /* Pink */
+        --primary-300: #cba6f7;   /* Mauve */
+        --primary-400: #f38ba8;   /* Red */
+        --primary-500: #eba0ac;   /* Maroon */
+        --primary-600: #fab387;   /* Peach */
+        --primary-700: #f9e2af;   /* Yellow */
+        --primary-800: #a6e3a1;   /* Green */
+        --primary-900: #94e2d5;   /* Teal */
+        
+        /* Secondary Color Palette */
+        --secondary-50: #89dceb;   /* Sky */
+        --secondary-100: #74c7ec;  /* Sapphire */
+        --secondary-200: #89b4fa;  /* Blue */
+        --secondary-300: #8aadf4;  /* Sapphire Alt */
+        --secondary-400: #b4befe;  /* Lavender */
+        --secondary-500: #cba6f7;  /* Mauve */
+        --secondary-600: #7f849c;  /* Overlay 1 */
+        --secondary-700: #6c7086;  /* Overlay 0 */
+        --secondary-800: #585b70;  /* Surface 2 */
+        --secondary-900: #45475a;  /* Surface 1 */
+        
+        /* Neutral/Gray Scale */
+        --neutral-50: #1e1e2e;    /* Base */
+        --neutral-100: #181825;   /* Mantle */
+        --neutral-200: #11111b;   /* Crust */
+        --neutral-300: #313244;   /* Surface 0 */
+        --neutral-400: #45475a;   /* Surface 1 */
+        --neutral-500: #585b70;   /* Surface 2 */
+        --neutral-600: #6c7086;   /* Overlay 0 */
+        --neutral-700: #7f849c;   /* Overlay 1 */
+        --neutral-800: #9399b2;   /* Overlay 2 */
+        --neutral-900: #cdd6f4;   /* Text */
+        
+        /* Semantic Colors */
+        --color-success: var(--primary-800);    /* Green */
+        --color-warning: var(--primary-700);    /* Yellow */
+        --color-error: var(--primary-400);      /* Red */
+        --color-info: var(--secondary-200);     /* Blue */
+        
+        /* Layout Colors */
+        --color-background: var(--neutral-50);
+        --color-surface: var(--neutral-300);
+        --color-sidebar: var(--neutral-300);
+        --color-accent: var(--secondary-200);   /* Blue - main accent */
+        --color-text-primary: var(--neutral-900);
+        --color-text-secondary: var(--neutral-800);
+        --color-text-muted: var(--neutral-600);
+        --color-border: var(--color-accent);
+        
+        /* Opacity variants */
+        --surface-opacity-75: color-mix(in srgb, var(--color-surface) 75%, transparent);
+        --accent-opacity-15: color-mix(in srgb, var(--color-accent) 15%, transparent);
+        --accent-opacity-40: color-mix(in srgb, var(--color-accent) 40%, transparent);
+        --accent-opacity-50: color-mix(in srgb, var(--color-accent) 50%, transparent);
+        
+        /* Legacy color mappings for backward compatibility */
+        --color-red-50: var(--primary-50);
+        --color-red-100: var(--primary-100);
+        --color-red-200: var(--primary-200);
+        --color-red-400: var(--primary-300);
+        --color-red-500: var(--primary-400);
+        --color-red-600: var(--primary-500);
+        --color-red-700: var(--primary-600);
+        --color-red-800: var(--primary-700);
+        
+        --color-orange-50: var(--primary-50);
+        --color-orange-100: var(--primary-600);
+        --color-orange-400: var(--primary-700);
+        --color-orange-500: var(--primary-600);
+        --color-orange-600: var(--primary-500);
+        --color-orange-700: var(--primary-300);
+        --color-orange-800: var(--secondary-600);
+        
+        --color-amber-50: var(--primary-50);
+        --color-amber-200: var(--primary-700);
+        --color-amber-500: var(--primary-600);
+        --color-amber-600: var(--primary-800);
+        --color-amber-700: var(--primary-900);
+        --color-amber-800: var(--secondary-50);
+        
+        --color-yellow-50: var(--primary-50);
+        --color-yellow-100: var(--primary-700);
+        --color-yellow-200: var(--primary-600);
+        --color-yellow-500: var(--primary-700);
+        --color-yellow-600: var(--primary-800);
+        --color-yellow-700: var(--primary-900);
+        --color-yellow-800: var(--secondary-100);
+        
+        --color-green-50: var(--primary-50);
+        --color-green-100: var(--primary-800);
+        --color-green-200: var(--primary-900);
+        --color-green-500: var(--primary-800);
+        --color-green-600: var(--primary-900);
+        --color-green-700: var(--secondary-50);
+        --color-green-800: var(--secondary-100);
+        
+        --color-blue-50: var(--primary-50);
+        --color-blue-100: var(--secondary-50);
+        --color-blue-200: var(--secondary-100);
+        --color-blue-300: var(--secondary-100);
+        --color-blue-400: var(--secondary-200);
+        --color-blue-500: var(--secondary-300);
+        --color-blue-600: var(--secondary-300);
+        --color-blue-700: var(--secondary-300);
+        --color-blue-800: var(--secondary-300);
+        
+        --color-purple-50: var(--primary-300);
+        --color-purple-100: var(--secondary-400);
+        --color-purple-500: var(--primary-300);
+        --color-purple-600: var(--secondary-400);
+        --color-purple-700: var(--secondary-600);
+        --color-purple-800: var(--secondary-700);
+        
+        --color-gray-50: var(--neutral-50);
+        --color-gray-100: var(--neutral-100);
+        --color-gray-200: var(--neutral-200);
+        --color-gray-300: var(--neutral-300);
+        --color-gray-400: var(--neutral-400);
+        --color-gray-500: var(--neutral-500);
+        --color-gray-600: var(--neutral-600);
+        --color-gray-700: var(--neutral-700);
+        --color-gray-800: var(--neutral-800);
+        --color-gray-900: var(--neutral-900);
+        
+        --color-gray-300-75: var(--surface-opacity-75);
+        
+        /* Component-specific variables */
+        --card-background: var(--color-surface);
+        --card-border: var(--color-border);
+        --button-primary: var(--color-accent);
+        --button-hover-offset: 2px;
+        --button-shadow-offset: 6px;
+        --button-hover-shadow-offset: 8px;
+        --border-radius-card: 2rem;
+        --border-radius-button: 1rem;
+        --border-width-card: 4px;
+        
+        /* Filter for icon color changes - needs to be updated when accent changes */
+        --icon-filter-accent: brightness(0) saturate(100%) invert(61%) sepia(69%) saturate(474%) hue-rotate(189deg) brightness(103%) contrast(96%);
     }
 
+    /* Base Typography */
     body,
     .prose,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
+    h1, h2, h3, h4, h5,
     p,
     select,
-    div.card-with-gradient > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
-        color: var(--color-gray-900);
+    [class*="card-"] > div:first-child > div:first-child > div:first-child,
+    .text-gray-600 {
+        color: var(--color-text-primary) !important;
     }
 
+    /* Background */
     body::before {
-        background: var(--color-gray-50);
+        background: var(--color-background);
     }
 
+    /* Cards */
     .card-with-gradient {
         border: none;
-        background: var(--color-gray-300) !important;
+        background: var(--card-background) !important;
         background-image: none;
     }
 
     .card-subtitle {
-        color: var(--color-gray-500);
+        color: var(--color-text-muted);
     }
 
     .card-content {
-        color: var(--color-gray-600);
+        color: var(--color-text-secondary);
     }
 
     .card-footer {
-        border-top: 1px solid var(--color-gray-300);
+        border-top: 1px solid var(--color-surface);
     }
 
     /* Sidebar */
-    div.transition-all:nth-child(1) {
+    div.transition-all:first-child {
         background: var(--color-sidebar);
-        color: var(--color-gray-900);
+        color: var(--color-text-primary);
     }
 
-    /* Weird line on the sidebar */
-    div.p-4:nth-child(1) > div:nth-child(2) > div:nth-child(3) {
+    /* Sidebar line fix */
+    div.p-4:first-child > div:nth-child(2) > div:nth-child(3) {
         background: var(--color-sidebar);
     }
 
@@ -207,53 +222,56 @@
         fill: var(--color-accent);
     }
 
-    /** Logout **/
-    div.items-start:nth-child(2) > div:nth-child(2) > form:nth-child(1) > button:nth-child(2) > span:nth-child(1) > svg:nth-child(1) > g:nth-child(1) > path:nth-child(1) {
-        fill: var(--color-red-500);
+    /* Logout Icon */
+    [class*="items-start"] > div:nth-child(2) > form:first-child > button:nth-child(2) path {
+        fill: var(--color-error);
     }
 
-    /* Hover bloops */
+    /* Hover bloop Effects */
     .bg-\[\#C7A077\],
     .bg-\[\#4A2D24\]\/10 {
-        background: var(--color-gray-600);
+        background: var(--color-text-muted);
     }
 
+    /* Marble Button */
     .marble-button {
-        background: var(--color-accent);
-        box-shadow: 0 6px 0 var(--color-accent), 0 8px 15px rgba(0, 0, 0, 0.2);
-        border-color: var(--color-accent);
+        background: var(--button-primary);
+        box-shadow: 0 var(--button-shadow-offset) 0 var(--button-primary), 0 8px 15px rgba(0, 0, 0, 0.2);
+        border-color: var(--button-primary);
     }
 
     .marble-button:hover {
-        background: var(--color-accent);
-        box-shadow: 0 8px 0 var(--color-accent), 0 10px 20px rgba(0, 0, 0, 0.25);
-        border-color: var(--color-accent);
+        background: var(--button-primary);
+        box-shadow: 0 var(--button-hover-shadow-offset) 0 var(--button-primary), 0 10px 20px rgba(0, 0, 0, 0.25);
+        border-color: var(--button-primary);
+        transform: translateY(calc(-1 * var(--button-hover-offset)));
     }
 
+    /* Borders */
     .border-\[\#E4DCC6\],
     .border,
     textarea {
-        border-color: var(--color-accent);
+        border-color: var(--color-border);
     }
 
-    /* Music Toggle (Half sure its broken lmfao) */
+    /* Music Toggle */
     #music-toggle {
-        background: var(--color-gray-100) !important;
-        border-color: var(--color-gray-300) !important;
+        background: var(--neutral-100) !important;
+        border-color: var(--color-surface) !important;
     }
 
     button {
         cursor: pointer;
     }
 
-    /*  Idk random border thingy  */
+    /* Generic border class */
     .border-saddle-taupe {
         border-color: var(--color-accent);
     }
 
-    /*  Comment Modal  */
-    [data-open-modal-type="comment"] > div:nth-child(1) {
-        background: var(--color-gray-300);
+    /* Comment Modal */
+    [data-open-modal-type="comment"] > div:first-child {
+        background: var(--color-surface);
     }
 
     [data-open-modal-type="comment"] a {
@@ -264,17 +282,18 @@
         color: var(--color-accent);
     }
 
-    /*   Comment Modal Editor   */
-    [data-comment-modal-target="editor"] > div:nth-child(2) > div:nth-child(1) {
-        background: var(--color-gray-300);
+    /* Comment Modal Editor */
+    [data-comment-modal-target="editor"] > div:nth-child(2) > div:first-child {
+        background: var(--color-surface);
         border-color: var(--color-accent);
     }
 
-    [data-comment-modal-target="editor"] > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
-        background: color-mix(in srgb, var(--color-accent) 15%, transparent);
+    [data-comment-modal-target="editor"] > div:nth-child(2) > div:first-child > div:first-child {
+        background: var(--accent-opacity-15);
         border-color: var(--color-accent);
     }
 
+    /* Editor Action Icons */
     [data-action="undo"] path,
     [data-action="redo"] path,
     [data-action="bold"] path,
@@ -287,260 +306,90 @@
         stroke: var(--color-accent);
     }
 
-    /* The green buttons that are actually an input for some weird reason */
+    /* Form Inputs */
     [name="commit"] {
         cursor: pointer;
     }
 
     .bg-saddle-taupe\/40 {
-        background: color-mix(in srgb, var(--color-accent) 40%, transparent);
+        background: var(--accent-opacity-40);
     }
 
+    /* Tutorial Components */
     #tutorial-help-btn {
-        background: var(--color-gray-100);
+        background: var(--neutral-100);
     }
 
     .tutorial-content-card {
         border-color: var(--color-accent);
-        border-radius: 2rem;
-        background: var(--color-gray-300);
+        border-radius: var(--border-radius-card);
+        background: var(--color-surface);
     }
 
     .tutorial-title {
-        color: var(--color-gray-900);
+        color: var(--color-text-primary);
     }
 
     .tutorial-description {
-        color: var(--color-gray-800);
+        color: var(--color-text-secondary);
     }
 
     .tutorial-continue-btn {
         background: var(--color-accent);
-        /*linear-gradient(135deg, #8b6f47 0%, #a0845c 50%, #8b6f47 100%);*/
-        color: var(--color-gray-400);
+        color: var(--neutral-400);
         border: none;
     }
 
     .tutorial-continue-btn:hover {
         background: var(--color-accent);
         transform: translateY(-1px);
-        border-color: none;
+        border-color: transparent;
+    }
+
+    /* Forms */
+    input:not([name="commit"]),
+    textarea,
+    select {
+        background: var(--color-surface);
+        border-color: var(--color-border);
     }
 }
-
 @-moz-document url-prefix("https://summer.hackclub.com/campfire") {
     .text-\[\#E65A42\] {
         color: var(--color-accent);
     }
 }
-
 @-moz-document url-prefix("https://summer.hackclub.com/shop") {
-    div.card-with-gradient > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
-        color: var(--color-gray-900);
+    [class*="card-"] > div:first-child > div:first-child > div:first-child {
+        color: var(--color-text-primary);
     }
 
     select {
-        background: var(--color-gray-300);
+        background: var(--color-surface);
     }
 }
 @-moz-document url-prefix("https://summer.hackclub.com/votes") {
     .bg-\[\#F6DBBA\] {
-        background: #313244;
+        background: var(--neutral-300);
     }
+    
     .bg-\[\#FFE8CD\] {
-        background: #1e1e2e;
-        color: #cdd6f4;
+        background: var(--neutral-50);
+        color: var(--color-text-primary);
     }
 
     .bg-\[\#FFE8CD\] *:has([fill]) {
-        fill: #cdd6f4;
+        fill: var(--color-text-primary);
         border-radius: 50%;
     }
 
-    /*  Voting buttons below    */
+    /* Voting buttons */
     input[type="radio"]:checked + div {
-        background: color-mix(in srgb, var(--color-accent) 50%, transparent);
-    }
-}
-@-moz-document url-prefix("https://summer.hackclub.com/explore") {
-    button.text-2xl:nth-child(2) > span:nth-child(1) > svg:nth-child(1) > path:nth-child(1),
-    .gap-16 > button:nth-child(1) > span:nth-child(1) > svg:nth-child(1) > path:nth-child(1) {
-        fill: var(--color-accent);
+        background: var(--accent-opacity-50);
     }
 
-    /* Projects */
-    #projects-grid path {
-        fill: var(--color-sidebar);
-    }
-
-    #projects-grid > a > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1),
-    #projects-grid > a > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
-        background: var(--color-sidebar);
-    }
-
-    #projects-grid button {
-        display: none !important;
-        /* STUPID all:revert CLASS */
-    }
-
-    /*  Quick Fix Cause They Broke All The Damn Colours :pensive:   */
-    .text-\[\#4a2d24\] {
-        color: var(--color-gray-900);
-    }
-    
-    .text-\[\#4a2d24\]:nth-child(2) , .text-\[\#4a2d24\] button, .text-\[\#4a2d24\] path {
-        color: var(--color-gray-600);
-    }
-    
-
-    /** Star **/
-    #devlogs-list > div.card-with-gradient > div.card-content > div.ml-4.cursor-pointer > div g > path {
-        fill: var(--color-yellow-500);
-    }
-
-    /* Time spent working on project */
-    .text-\[\#B89576\] {
-        color: var(--color-gray-600);
-    }
-
-    /* Literally the "worked on" text (Why is it a different color???) */
-    .text-\[\#865c39\] {
-        color: var(--color-accent);
-    }
-}
-
-@-moz-document url-prefix("https://summer.hackclub.com/my_projects") {
-    .grid > a > div:nth-child(1),
-    div.bg-\[\#F3ECD8\]:nth-child(5) {
-        background: var(--color-gray-300);
-        border-color: var(--color-accent);
-    }
-
-    /* The create project bg */
-    .bg-\[\#F3ECD8\] {
-        background: var(--color-gray-300);
-    }
-
-    /* To lazy to do the create project button */
-    [data-modal-type="create-project"] {}
-
-    /* The forms when editing your project */
-    input:not([name="commit"]),
-    textarea,
-    select {
-        background: var(--color-gray-300);
-    }
-
-    /* The fake button for ysws when editing project */
-    [data-project-form-target="yswsSubmissionCheckboxFake"] path {
-        fill: var(--color-gray-900);
-    }
-
-    div.h-5 {
-        background: var(--color-gray-300);
-        border-color: var(--color-accent);
-        --tw-ring-color: transparent;
-    }
-        
-}
-
-@-moz-document url-prefix("https://summer.hackclub.com/projects") {
-    .bg-\[\#F3ECD8\] {
-        background: var(--color-gray-300);
-    }
-
-    .card-content {
-        padding: 4px;
-        border: 2px solid var(--color-accent);
-        border-radius: 5px;
-    }
-
-    /* Side icons */
-    [data-sidebar-target="links"] path {
-        fill: var(--color-accent);
-    }
-
-    /*     The ship, edit, and delete buttons */
-    .gap-6 path {
-        fill: currentColor;
-    }
-
-    /*  The image on the top */
-    .from-\[\#F3ECD8\] {
-        --tw-gradient-from: var(--color-gray-300);
-    }
-
-    #ba:hover > #bh {
-        background: var(--color-gray-300-75);
-    }
-
-    #ba:hover #bt {
-        color: var(--color-gray-900);
-    }
-
-    #ba:hover * {
-        cursor: pointer;
-    }
-
-    #bt {
-        color: transparent;
-    }
-
-    /*  Quick Fix Cause They Broke All The Damn Colours :pensive:   */
-    .text-\[\#4a2d24\] {
-        color: var(--color-gray-900);
-    }
-    
-    .text-\[\#4a2d24\]:nth-child(2) , .text-\[\#4a2d24\] button, .text-\[\#4a2d24\] {
-        color: var(--color-gray-600);
-    }
-    
-    /*  Below are the stars   */
-    [clip-path="url(#clip0_35_306)"] path {
-        fill: currentColor;
-    }
-
-    .text-vintage-red {
-        color: var(--color-blue-700);
-    }
-
-    /*  Text for how long you've worked on the project */
-    .text-\[\#B89576\] {
-        color: var(--color-gray-600);
-    }
-
-    /* The thingy on the side of the project devposts */
-    div.align-center > img:nth-child(1) {
-        filter: brightness(0) saturate(100%) invert(61%) sepia(69%) saturate(474%) hue-rotate(189deg) brightness(103%) contrast(96%);
-        /* THIS NEEDS TO BE CHANGED WHEN --color-accent CHANGES */
-    }
-
-    .border-5 {
-        border-color: var(--color-accent);
-    }
-
-    /* The forms when editing your project */
-    input:not([name="commit"]),
-    textarea,
-    select {
-        background: var(--color-gray-300);
-    }
-
-    /* The fake button for ysws when editing project */
-    [data-project-form-target="yswsSubmissionCheckboxFake"] path {
-        fill: var(--color-gray-900);
-    }
-
-    div.h-5 {
-        background: var(--color-gray-300);
-        border-color: var(--color-accent);
-        --tw-ring-color: transparent;
-    }
-}
-
-@-moz-document url-prefix("https://summer.hackclub.com/votes") {
     div[data-project-index] {
-        background: var(--color-gray-300);
+        background: var(--color-surface);
     }
 
     path {
@@ -551,42 +400,183 @@
         background: var(--color-sidebar);
     }
 
-    /* Demo and Repo buttons*/
-    /* .bg-\[\#FFE8CD\] {
-        background: var(--color-accent);
-    } */
-    
-    /* Click me please music thingy */
     .bg-\[\#F3ECD8\] {
-        background: var(--color-gray-200);
+        background: var(--neutral-200);
     }
 
-    /* Click me please music text */
     .bg-\[\#F3ECD8\] div {
-        color: var(--color-gray-900);
+        color: var(--color-text-primary);
     }
 
-    /* Demo and Repo button svgs*/
     .bg-\[\#FFE8CD\] path:nth-child(2) {
         fill: currentColor;
     }
 
-    .bg-\[\#FFE8CD\] path:nth-child(1) {
+    .bg-\[\#FFE8CD\] path:first-child {
         fill: transparent;
     }
 
-    /* Demo and Repo button text */
-    /* .text-\[\#4A2D24\] {
-        color: var(--color-gray-200);
-    } */
-    
-    /* Time spent working on project */
     .text-\[\#B89576\] {
-        color: var(--color-gray-600);
+        color: var(--color-text-secondary);
     }
 
-    /* Textarea */
     #vote_explanation {
-        color: var(--color-gray-900);
+        color: var(--color-text-primary);
+    }
+}
+
+@-moz-document url-prefix("https://summer.hackclub.com/explore") {
+    button.text-2xl:nth-child(2) > span:first-child > svg:first-child > path:first-child,
+    .gap-16 > button:first-child > span:first-child > svg:first-child > path:first-child {
+        fill: var(--color-accent);
+    }
+
+    /* Projects */
+    #projects-grid path {
+        fill: var(--color-sidebar);
+    }
+
+    #projects-grid > a > div:first-child > div:nth-child(2) > div:nth-child(3) > div:first-child,
+    #projects-grid > a > div:first-child > div:nth-child(2) > div:nth-child(3) > div:first-child > div:nth-child(2) {
+        background: var(--color-sidebar);
+    }
+
+    #projects-grid button {
+        display: none !important;
+    }
+
+    .text-\[\#4a2d24\] {
+        color: var(--color-text-primary);
+    }
+    
+    .text-\[\#4a2d24\]:nth-child(2),
+    .text-\[\#4a2d24\] button,
+    .text-\[\#4a2d24\] path {
+        color: var(--color-text-secondary);
+    }
+
+    /* Star icons */
+    #devlogs-list > div.card-with-gradient > div.card-content > div.ml-4.cursor-pointer > div g > path {
+        fill: var(--color-warning);
+    }
+
+    .text-\[\#B89576\] {
+        color: var(--color-text-secondary);
+    }
+
+    .text-\[\#865c39\] {
+        color: var(--color-accent);
+    }
+}
+
+@-moz-document url-prefix("https://summer.hackclub.com/my_projects") {
+    .grid > a > div:first-child,
+    div.bg-\[\#F3ECD8\]:nth-child(5) {
+        background: var(--color-surface);
+        border-color: var(--color-accent);
+    }
+
+    .bg-\[\#F3ECD8\] {
+        background: var(--color-surface);
+    }
+
+    [data-project-form-target="yswsSubmissionCheckboxFake"] path {
+        fill: var(--color-text-primary);
+    }
+
+    div.h-5 {
+        background: var(--color-surface);
+        border-color: var(--color-accent);
+        --tw-ring-color: transparent;
+    }
+}
+
+@-moz-document url-prefix("https://summer.hackclub.com/projects") {
+    .bg-\[\#F3ECD8\] {
+        background: var(--color-surface);
+    }
+
+    .card-with-gradient {
+        border: var(--border-width-card) solid var(--card-border);
+        padding: 10px;
+        border-radius: var(--border-radius-card);
+    }
+
+    [data-sidebar-target="links"] path {
+        fill: var(--color-accent);
+    }
+    
+    .btn-pixel {
+        border-radius: var(--border-radius-button);
+        box-shadow: none;
+    }
+
+    .gap-6 path {
+        fill: currentColor;
+    }
+
+    .from-\[\#F3ECD8\] {
+        --tw-gradient-from: var(--color-surface);
+    }
+
+    #ba:hover > #bh {
+        background: var(--surface-opacity-75);
+    }
+
+    #ba:hover #bt {
+        color: var(--color-text-primary);
+    }
+
+    #ba:hover * {
+        cursor: pointer;
+    }
+
+    #bt {
+        color: transparent;
+    }
+    
+    button[data-action="click->devlog-card#expand"] {
+        color: var(--color-accent) !important;
+    }
+
+    .text-\[\#4a2d24\] {
+        color: var(--color-text-primary);
+    }
+    
+    .text-\[\#4a2d24\]:nth-child(2),
+    .text-\[\#4a2d24\] button,
+    .text-\[\#4a2d24\] {
+        color: var(--color-text-secondary);
+    }
+
+    [clip-path="url(#clip0_35_306)"] path {
+        fill: currentColor;
+    }
+
+    .text-vintage-red {
+        color: var(--color-blue-700);
+    }
+
+    .text-\[\#B89576\] {
+        color: var(--color-text-secondary);
+    }
+
+    /* Icon filter - needs manual update when accent changes */
+    div.align-center > img:first-child {
+        filter: var(--icon-filter-accent);
+    }
+
+    .border-5 {
+        border-color: var(--color-accent);
+    }
+
+    [data-project-form-target="yswsSubmissionCheckboxFake"] path {
+        fill: var(--color-text-primary);
+    }
+
+    div.h-5 {
+        background: var(--color-surface);
+        border-color: var(--color-accent);
+        --tw-ring-color: transparent;
     }
 }
