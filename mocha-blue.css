@@ -353,6 +353,20 @@
         background: var(--color-surface);
         border-color: var(--color-border);
     }
+    
+    /* Sidebar Pin Icon */
+    [data-sidebar-target="pinIcon"] path {
+        fill: var(--color-accent);
+    }
+    
+    [data-sidebar-target="pinButton"]:hover > svg {
+        opacity: 100;
+    }
+    
+    /* Sidebar Pin Icon Hover Background */
+    [data-sidebar-target="pinButton"]:hover {
+        background: var(--accent-opacity-15);
+    }
 }
 @-moz-document url-prefix("https://summer.hackclub.com/campfire") {
     .text-\[\#E65A42\] {
