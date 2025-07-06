@@ -305,6 +305,19 @@
         fill: var(--color-accent);
         stroke: var(--color-accent);
     }
+    
+    [data-action="undo"]:hover,
+    [data-action="redo"]:hover,
+    [data-action="bold"]:hover,
+    [data-action="italic"]:hover,
+    [data-action="strike"]:hover,
+    [data-action="code"]:hover,
+    [data-action="bulletList"]:hover,
+    [data-action="orderedList"]:hover,
+    [data-action="blockquote"]:hover,
+    [data-action="codeBlock"]:hover {
+        background: var(--accent-opacity-15);
+    }
 
     /* Form Inputs */
     [name="commit"] {
