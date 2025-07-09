@@ -305,19 +305,6 @@
         fill: var(--color-accent);
         stroke: var(--color-accent);
     }
-    
-    [data-action="undo"]:hover,
-    [data-action="redo"]:hover,
-    [data-action="bold"]:hover,
-    [data-action="italic"]:hover,
-    [data-action="strike"]:hover,
-    [data-action="code"]:hover,
-    [data-action="bulletList"]:hover,
-    [data-action="orderedList"]:hover,
-    [data-action="blockquote"]:hover,
-    [data-action="codeBlock"]:hover {
-        background: var(--accent-opacity-15);
-    }
 
     /* Form Inputs */
     [name="commit"] {
@@ -366,20 +353,6 @@
         background: var(--color-surface);
         border-color: var(--color-border);
     }
-    
-    /* Sidebar Pin Icon */
-    [data-sidebar-target="pinIcon"] path {
-        fill: var(--color-accent);
-    }
-    
-    [data-sidebar-target="pinButton"]:hover > svg {
-        opacity: 100;
-    }
-    
-    /* Sidebar Pin Icon Hover Background */
-    [data-sidebar-target="pinButton"]:hover {
-        background: var(--accent-opacity-15);
-    }
 }
 @-moz-document url-prefix("https://summer.hackclub.com/campfire") {
     .text-\[\#E65A42\] {
@@ -422,13 +395,40 @@
     path {
         fill: var(--color-sidebar);
     }
-
+    
+    .report-card-modal  {
+        border: 2px solid var(--color-accent) !important;
+        box-shadow: none;
+        border-radius: 1.125em !important;
+        background: var(--card-background) !important;
+        background-image: none;
+        color: var(--color-text-primary) !important;
+    }
+    
+    .report-card-modal > form span {
+        color: var(--color-text-secondary) !important;
+    }
+    
+    /* Used by AI ticker */
+    div.px-4 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > span:nth-child(1) > svg:nth-child(1) > g:nth-child(1) {
+        stroke: var(--color-accent);
+    }
+    
+    .bg-\[\#4A2D24\],
     .sm\:p-2 {
         background: var(--color-sidebar);
     }
 
     .bg-\[\#F3ECD8\] {
         background: var(--neutral-200);
+    }
+    
+    button[title="Report this project for suspicious activity"] {
+        background: var(--primary-400);
+    }
+    
+    button[title="Report this project for suspicious activity"] > svg > path {
+        stroke: var(--color-text-primary);
     }
 
     .bg-\[\#F3ECD8\] div {
@@ -447,7 +447,8 @@
         color: var(--color-text-secondary);
     }
 
-    #vote_explanation {
+    #vote_explanation,
+    .text-\[\#FFE8CD\] {
         color: var(--color-text-primary);
     }
 }
