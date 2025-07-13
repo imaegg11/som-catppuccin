@@ -1,15 +1,12 @@
 /* ==UserStyle==
 @name       Customizable Theme for summer.hackclub.com
-@version    20250706.01.00
+@version    20250713.00.33
 @namespace  ?
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://summer.hackclub.com/") {
     :root,
     :host {
-        /* Theme Configuration - Easy to customize */
-        --theme-name: "catppuccin-mocha";
-        
         /* Primary Color Palette */
         --primary-50: #f5e0dc;    /* Rosewater */
         --primary-100: #f2cdcd;   /* Flamingo */
@@ -56,7 +53,7 @@
         --color-background: var(--neutral-50);
         --color-surface: var(--neutral-300);
         --color-sidebar: var(--neutral-300);
-        --color-accent: var(--secondary-200);   /* Blue - main accent */
+        --color-accent: var(--secondary-300);   /* Blue - main accent */
         --color-text-primary: var(--neutral-900);
         --color-text-secondary: var(--neutral-800);
         --color-text-muted: var(--neutral-600);
@@ -150,6 +147,9 @@
         --border-radius-button: 1rem;
         --border-width-card: 4px;
         
+        --color-saddle-taupe: var(--color-accent);
+        --color-forest: color-mix(in srgb, var(--primary-800) 50%, transparent);
+        
         /* Filter for icon color changes - needs to be updated when accent changes */
         --icon-filter-accent: brightness(0) saturate(100%) invert(61%) sepia(69%) saturate(474%) hue-rotate(189deg) brightness(103%) contrast(96%);
     }
@@ -163,6 +163,10 @@
     [class*="card-"] > div:first-child > div:first-child > div:first-child,
     .text-gray-600 {
         color: var(--color-text-primary) !important;
+    }
+    
+    .text-saddle-taupe {
+        color: var(--color-accent);
     }
 
     /* Background */
@@ -384,9 +388,51 @@
     }
 }
 @-moz-document url-prefix("https://summer.hackclub.com/campfire") {
-    .text-\[\#E65A42\] {
+    .text-\[\#E65A42\], .text-blue-500.hover\:text-blue-700.underline {
         color: var(--color-accent);
     }
+    
+    .bg-blue-500 {
+        background: var(--color-accent);
+    }
+input[type="checkbox"] {
+  appearance: none;
+  width: 1.5em; /* ≈ 24px */
+  height: 1.5em;
+  border: 2px solid var(--color-accent);
+  border-radius: 0.25em;
+  background-color: var(--color-disabled-bg, #e0e0e0);
+  position: relative;
+  cursor: not-allowed;
+  display: inline-block;
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--color-accent);
+}
+
+input[type="checkbox"]::after {
+  content: "";
+  position: absolute;
+  top: 0.25em;
+  left: 0.5em;
+  width: 0.3em;
+  height: 0.7em;
+  border: solid var(--color-text-primary);
+  border-width: 0 0.2em 0.2em 0;
+  transform: rotate(45deg);
+  display: none;
+}
+
+input[type="checkbox"]:checked::after {
+  display: block;
+}
+
+input[type="checkbox"]:disabled {
+  pointer-events: none;
+}
+
+
 }
 @-moz-document url-prefix("https://summer.hackclub.com/shop") {
     [class*="card-"] > div:first-child > div:first-child > div:first-child {
@@ -635,5 +681,27 @@
         background: var(--color-surface);
         border-color: var(--color-accent);
         --tw-ring-color: transparent;
+    }
+}
+
+@-moz-document url-prefix("https://summer.hackclub.com/shop/items") {
+    .bg-soft-bone, .bg-white {
+        background: var(--color-surface);
+    }
+    
+    span.text-2xl:nth-child(2) {
+        gap: 4px;
+    }
+    
+    span.ml-2 {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+    
+    span.inline-flex.items-center.rounded-full.text-xs.font-medium.bg-blue-100.text-blue-800.mt-1 {
+        color: var(--color-text-primary);
+        background: none;
+        border: 2px solid var(--color-accent);
     }
 }
