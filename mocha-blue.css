@@ -1,71 +1,71 @@
 /* ==UserStyle==
 @name       Customizable Theme for summer.hackclub.com
-@version    20250713.00.33
+@version    20250720.02.17
 @namespace  ?
 ==/UserStyle== */
-
-@-moz-document url-prefix("https://summer.hackclub.com/") {
+@-moz-document domain("summer.hackclub.com") {
     :root,
     :host {
-        /* Primary Color Palette */
-        --primary-50: #f5e0dc;    /* Rosewater */
-        --primary-100: #f2cdcd;   /* Flamingo */
-        --primary-200: #f5c2e7;   /* Pink */
-        --primary-300: #cba6f7;   /* Mauve */
-        --primary-400: #f38ba8;   /* Red */
-        --primary-500: #eba0ac;   /* Maroon */
-        --primary-600: #fab387;   /* Peach */
-        --primary-700: #f9e2af;   /* Yellow */
-        --primary-800: #a6e3a1;   /* Green */
-        --primary-900: #94e2d5;   /* Teal */
-        
-        /* Secondary Color Palette */
-        --secondary-50: #89dceb;   /* Sky */
-        --secondary-100: #74c7ec;  /* Sapphire */
-        --secondary-200: #89b4fa;  /* Blue */
-        --secondary-300: #8aadf4;  /* Sapphire Alt */
-        --secondary-400: #b4befe;  /* Lavender */
-        --secondary-500: #cba6f7;  /* Mauve */
-        --secondary-600: #7f849c;  /* Overlay 1 */
-        --secondary-700: #6c7086;  /* Overlay 0 */
-        --secondary-800: #585b70;  /* Surface 2 */
-        --secondary-900: #45475a;  /* Surface 1 */
-        
-        /* Neutral/Gray Scale */
-        --neutral-50: #1e1e2e;    /* Base */
-        --neutral-100: #181825;   /* Mantle */
-        --neutral-200: #11111b;   /* Crust */
-        --neutral-300: #313244;   /* Surface 0 */
-        --neutral-400: #45475a;   /* Surface 1 */
-        --neutral-500: #585b70;   /* Surface 2 */
-        --neutral-600: #6c7086;   /* Overlay 0 */
-        --neutral-700: #7f849c;   /* Overlay 1 */
-        --neutral-800: #9399b2;   /* Overlay 2 */
-        --neutral-900: #cdd6f4;   /* Text */
-        
-        /* Semantic Colors */
-        --color-success: var(--primary-800);    /* Green */
-        --color-warning: var(--primary-700);    /* Yellow */
-        --color-error: var(--primary-400);      /* Red */
-        --color-info: var(--secondary-200);     /* Blue */
-        
-        /* Layout Colors */
-        --color-background: var(--neutral-50);
-        --color-surface: var(--neutral-300);
-        --color-sidebar: var(--neutral-300);
-        --color-accent: var(--secondary-300);   /* Blue - main accent */
-        --color-text-primary: var(--neutral-900);
-        --color-text-secondary: var(--neutral-800);
-        --color-text-muted: var(--neutral-600);
-        --color-border: var(--color-accent);
-        
-        /* Opacity variants */
-        --surface-opacity-75: color-mix(in srgb, var(--color-surface) 75%, transparent);
-        --accent-opacity-15: color-mix(in srgb, var(--color-accent) 15%, transparent);
-        --accent-opacity-40: color-mix(in srgb, var(--color-accent) 40%, transparent);
-        --accent-opacity-50: color-mix(in srgb, var(--color-accent) 50%, transparent);
-        
-        /* Legacy color mappings for backward compatibility */
+        --primary-50: #f5e0dc;
+        /* Rosewater */
+        --primary-100: #f2cdcd;
+        /* Flamingo */
+        --primary-200: #f5c2e7;
+        /* Pink */
+        --primary-300: #cba6f7;
+        /* Mauve */
+        --primary-400: #f38ba8;
+        /* Red */
+        --primary-500: #eba0ac;
+        /* Maroon */
+        --primary-600: #fab387;
+        /* Peach */
+        --primary-700: #f9e2af;
+        /* Yellow */
+        --primary-800: #a6e3a1;
+        /* Green */
+        --primary-900: #94e2d5;
+        /* Teal */
+        --secondary-50: #89dceb;
+        /* Sky */
+        --secondary-100: #74c7ec;
+        /* Sapphire */
+        --secondary-200: #89b4fa;
+        /* Blue */
+        --secondary-300: #8aadf4;
+        /* Sapphire Alt */
+        --secondary-400: #b4befe;
+        /* Lavender */
+        --secondary-500: #cba6f7;
+        /* Mauve */
+        --secondary-600: #7f849c;
+        /* Overlay 1 */
+        --secondary-700: #6c7086;
+        /* Overlay 0 */
+        --secondary-800: #585b70;
+        /* Surface 2 */
+        --secondary-900: #45475a;
+        /* Surface 1 */
+        --neutral-50: #1e1e2e;
+        /* Base */
+        --neutral-100: #181825;
+        /* Mantle */
+        --neutral-200: #11111b;
+        /* Crust */
+        --neutral-300: #313244;
+        /* Surface 0 */
+        --neutral-400: #45475a;
+        /* Surface 1 */
+        --neutral-500: #585b70;
+        /* Surface 2 */
+        --neutral-600: #6c7086;
+        /* Overlay 0 */
+        --neutral-700: #7f849c;
+        /* Overlay 1 */
+        --neutral-800: #9399b2;
+        /* Overlay 2 */
+        --neutral-900: #cdd6f4;
+
         --color-red-50: var(--primary-50);
         --color-red-100: var(--primary-100);
         --color-red-200: var(--primary-200);
@@ -74,7 +74,7 @@
         --color-red-600: var(--primary-500);
         --color-red-700: var(--primary-600);
         --color-red-800: var(--primary-700);
-        
+
         --color-orange-50: var(--primary-50);
         --color-orange-100: var(--primary-600);
         --color-orange-400: var(--primary-700);
@@ -82,14 +82,14 @@
         --color-orange-600: var(--primary-500);
         --color-orange-700: var(--primary-300);
         --color-orange-800: var(--secondary-600);
-        
+
         --color-amber-50: var(--primary-50);
         --color-amber-200: var(--primary-700);
         --color-amber-500: var(--primary-600);
         --color-amber-600: var(--primary-800);
         --color-amber-700: var(--primary-900);
         --color-amber-800: var(--secondary-50);
-        
+
         --color-yellow-50: var(--primary-50);
         --color-yellow-100: var(--primary-700);
         --color-yellow-200: var(--primary-600);
@@ -97,7 +97,7 @@
         --color-yellow-600: var(--primary-800);
         --color-yellow-700: var(--primary-900);
         --color-yellow-800: var(--secondary-100);
-        
+
         --color-green-50: var(--primary-50);
         --color-green-100: var(--primary-800);
         --color-green-200: var(--primary-900);
@@ -105,7 +105,7 @@
         --color-green-600: var(--primary-900);
         --color-green-700: var(--secondary-50);
         --color-green-800: var(--secondary-100);
-        
+
         --color-blue-50: var(--primary-50);
         --color-blue-100: var(--secondary-50);
         --color-blue-200: var(--secondary-100);
@@ -115,14 +115,14 @@
         --color-blue-600: var(--secondary-300);
         --color-blue-700: var(--secondary-300);
         --color-blue-800: var(--secondary-300);
-        
+
         --color-purple-50: var(--primary-300);
         --color-purple-100: var(--secondary-400);
         --color-purple-500: var(--primary-300);
         --color-purple-600: var(--secondary-400);
         --color-purple-700: var(--secondary-600);
         --color-purple-800: var(--secondary-700);
-        
+
         --color-gray-50: var(--neutral-50);
         --color-gray-100: var(--neutral-100);
         --color-gray-200: var(--neutral-200);
@@ -133,223 +133,185 @@
         --color-gray-700: var(--neutral-700);
         --color-gray-800: var(--neutral-800);
         --color-gray-900: var(--neutral-900);
-        
-        --color-gray-300-75: var(--surface-opacity-75);
-        
-        /* Component-specific variables */
-        --card-background: var(--color-surface);
-        --card-border: var(--color-border);
-        --button-primary: var(--color-accent);
-        --button-hover-offset: 2px;
-        --button-shadow-offset: 6px;
-        --button-hover-shadow-offset: 8px;
-        --border-radius-card: 2rem;
-        --border-radius-button: 1rem;
-        --border-width-card: 4px;
-        
+
+        --color-background: var(--neutral-50);
+        --color-surface: var(--neutral-300);
+        --color-accent: var(--secondary-300);
+
+        --color-text-primary: var(--neutral-900);
+        --color-text-secondary: var(--neutral-800);
+        --color-text-muted: var(--neutral-600);
+        --color-border: var(--color-accent);
+
+        --color-som-dark: var(--color-accent);
+        --color-som-highlight: var(--color-text-muted);
+        --color-som-bright: var(--color-accent);
+        --color-som-detail: var(--color-text-muted);
+        --color-forest: color-mix(in srgb, var(--primary-800) 70%, black 30%);
+        --color-warm: #e6c58e;
+        --color-bread: var(--color-surface);
+        --color-vintage-red: #b94d3a;
+        --color-nice-blue: #4a7ba7;
+        --color-soft-bone: var(--color-surface);
         --color-saddle-taupe: var(--color-accent);
-        --color-forest: color-mix(in srgb, var(--primary-800) 50%, transparent);
-        
-        /* Filter for icon color changes - needs to be updated when accent changes */
-        --icon-filter-accent: brightness(0) saturate(100%) invert(61%) sepia(69%) saturate(474%) hue-rotate(189deg) brightness(103%) contrast(96%);
+        --color-dark-blue: #41a4e6;
+
+        --color-accent: var(--secondary-300);
+
+        --filter-into-accent: brightness(0) saturate(100%) invert(61%) sepia(69%) saturate(474%) hue-rotate(189deg) brightness(103%) contrast(96%);
     }
 
-    /* Base Typography */
+    /* Text */
     body,
     .prose,
-    h1, h2, h3, h4, h5,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
     p,
     select,
-    [class*="card-"] > div:first-child > div:first-child > div:first-child,
-    .text-gray-600 {
+    .text-\[\#4A2D24\] {
         color: var(--color-text-primary) !important;
     }
-    
-    .text-saddle-taupe {
-        color: var(--color-accent);
+
+    /* Legacy patching */
+    .text-\[\#E65A42\] {
+        color: var(--primary-500);
     }
 
-    /* Background */
-    body::before {
-        background: var(--color-background);
-    }
-
-    /* Cards */
-    .card-with-gradient {
-        border: none;
-        background: var(--card-background) !important;
-        background-image: none;
-    }
-
-    .card-subtitle {
-        color: var(--color-text-muted);
-    }
-
-    .card-content {
+    .text-\[\#865c39\] {
         color: var(--color-text-secondary);
     }
 
-    .card-footer {
-        border-top: 1px solid var(--color-surface);
+    * {
+        border-color: var(--color-accent) !important;
     }
 
-    /* Sidebar */
-    div.transition-all:first-child {
-        background: var(--color-sidebar);
-        color: var(--color-text-primary);
-    }
-
-    /* Sidebar line fix */
-    div.p-4:first-child > div:nth-child(2) > div:nth-child(3) {
-        background: var(--color-sidebar);
-    }
-
-    .p-4 path {
-        fill: var(--color-sidebar);
-    }
-
-    path[stroke-width] {
-        stroke: var(--color-accent);
-    }
-
-    select {
-        border-color: var(--color-accent);
-    }
-
-    /* Icons */
-    li.flex path {
+    /* Most icons */
+    path[fill="#4A2D24"] {
         fill: var(--color-accent);
     }
 
-    /* Gallery Icon */
-    [data-tab="gallery"] path {
-        fill: var(--color-accent);
+    /* Buttons */
+    .som-button-danger {
+        --bg-color: color-mix(in srgb, var(--primary-500) 90%, black 10%);
     }
 
-    /* Logout Icon */
-    [class*="items-start"] > div:nth-child(2) > form:first-child > button:nth-child(2) path {
-        fill: var(--color-error);
+    .som-button-primary {
+        --bg-color: color-mix(in srgb, var(--color-accent) 90%, black 10%);
     }
 
-    /* Hover bloop Effects */
-    .bg-\[\#C7A077\],
-    .bg-\[\#4A2D24\]\/10 {
-        background: var(--color-text-muted);
+    .som-button-buy {
+        --bg-color: color-mix(in srgb, var(--color-forest) 90%, black 10%);
     }
 
-    /* Marble Button */
-    .marble-button {
-        background: var(--button-primary);
-        box-shadow: 0 var(--button-shadow-offset) 0 var(--button-primary), 0 8px 15px rgba(0, 0, 0, 0.2);
-        border-color: var(--button-primary);
+    .som-button-danger,
+    .som-button-primary,
+    .som-button-buy {
+        --bg-disabled-color: color-mix(in srgb, var(--bg-color) 80%, black 20%);
+        --fg-color: var(--color-text-primary);
+        --hover-color: color-mix(in srgb, var(--bg-color) 90%, black 10%);
+        --click-color: color-mix(in srgb, var(--bg-color) 90%, black 10%);
     }
 
-    .marble-button:hover {
-        background: var(--button-primary);
-        box-shadow: 0 var(--button-hover-shadow-offset) 0 var(--button-primary), 0 10px 20px rgba(0, 0, 0, 0.25);
-        border-color: var(--button-primary);
-        transform: translateY(calc(-1 * var(--button-hover-offset)));
+    .som-button-buy path [fill],
+    .som-button-primary path[fill],
+    .som-button-danger path[fill] {
+        fill: var(--fg-color);
     }
 
-    /* Borders */
-    .border-\[\#E4DCC6\],
-    .border,
-    textarea {
-        border-color: var(--color-border);
+    /*  Text inputs */
+    .som-horizontal-input {
+        background: none;
+        border: 2px solid var(--color-accent);
     }
 
-    /* Music Toggle */
-    #music-toggle {
-        background: var(--neutral-100) !important;
-        border-color: var(--color-surface) !important;
+    /* Tooltips */
+    .bg-\[\#F3ECD8\] {
+        background-color: var(--color-surface);
     }
 
-    button {
-        cursor: pointer;
+    /* Cards */
+    div.card-with-gradient,
+    div.bg-\[\#F6DBBA\] {
+        background: var(--color-surface) !important;
+        box-shadow: none !important;
+        border: 2px solid var(--color-accent) !important;
     }
 
-    /* Generic border class */
-    .border-saddle-taupe {
-        border-color: var(--color-accent);
-    }
-
-    /* Comment Modal */
-    [data-open-modal-type="comment"] > div:first-child {
+    /* Sidebar SHULKKKHHLLL EMOJIIIII */
+    div.bg-linear-to-b.from-\[\#E6D4BE\].to-\[\#F6DBBA\] {
         background: var(--color-surface);
+        padding: calc(var(--spacing)*5);
+        border: 2px solid var(--color-accent);
+        border-radius: var(--radius-2xl);
     }
 
-    [data-open-modal-type="comment"] a {
-        color: var(--color-accent);
+    div[data-action="mouseover->sidebar#handleMouseEnter mouseleave->sidebar#handleMouseExit"] > div:first-child,
+    div[data-action="mouseover->sidebar#handleMouseEnter mouseleave->sidebar#handleMouseExit"] > div:last-child,
+    div[data-action="mouseover->sidebar#handleMouseEnter mouseleave->sidebar#handleMouseExit"] > div:nth-child(2) > div:first-child,
+    div[data-action="mouseover->sidebar#handleMouseEnter mouseleave->sidebar#handleMouseExit"] > div:nth-child(2) > div:nth-child(2),
+    div[data-action="mouseover->sidebar#handleMouseEnter mouseleave->sidebar#handleMouseExit"] > div:nth-child(2) > div:nth-child(4),
+    div[data-action="mouseover->sidebar#handleMouseEnter mouseleave->sidebar#handleMouseExit"] > div:nth-child(2) > div:nth-child(5) {
+        display: none;
     }
 
-    [data-open-modal-type="comment"] [data-action="click->modal#close"]:hover {
-        color: var(--color-accent);
+    button[data-sidebar-target="pinButton"] {
+        position: static;
+        margin-left: auto;
     }
 
-    /* Comment Modal Editor */
-    [data-comment-modal-target="editor"] > div:nth-child(2) > div:first-child {
-        background: var(--color-surface);
-        border-color: var(--color-accent);
+    button.relative:nth-child(2) > span:nth-child(1) > svg:nth-child(1) > g:nth-child(1) > path:nth-child(1) {
+        fill: var(--primary-500);
     }
 
-    [data-comment-modal-target="editor"] > div:nth-child(2) > div:first-child > div:first-child {
-        background: var(--accent-opacity-15);
-        border-color: var(--color-accent);
+
+    /* Checkboxes */
+    input[type="checkbox"]:not(:disabled) {
+        accent-color: var(--color-accent);
     }
 
-    /* Editor Action Icons */
-    [data-action="undo"] path,
-    [data-action="redo"] path,
-    [data-action="bold"] path,
-    [data-action="italic"] polygon,
-    [data-action="code"] path,
-    [data-action="bulletList"] path,
-    [data-action="orderedList"] line,
-    [data-action="blockquote"] path {
-        fill: var(--color-accent);
-        stroke: var(--color-accent);
-    }
-    
-    
-    [data-action="undo"]:hover,
-    [data-action="redo"]:hover,
-    [data-action="bold"]:hover,
-    [data-action="italic"]:hover,
-    [data-action="strike"]:hover,
-    [data-action="code"]:hover,
-    [data-action="bulletList"]:hover,
-    [data-action="orderedList"]:hover,
-    [data-action="blockquote"]:hover,
-    [data-action="codeBlock"]:hover {
-        background: var(--accent-opacity-15);
+    input[type="checkbox"]:disabled {
+        appearance: none;
+        width: 1.5em;
+        /* ≈ 24px */
+        height: 1.5em;
+        border-width: 2px;
+        border-radius: 0.25em;
+        background-color: var(--color-disabled-bg, #e0e0e0);
+        position: relative;
+        cursor: not-allowed;
+        display: inline-block;
+        pointer-events: none;
     }
 
-  
-    /* Sidebar Pin Icon */
-    [data-sidebar-target="pinIcon"] path {
-        fill: var(--color-accent);
-    }
-    
-    [data-sidebar-target="pinButton"]:hover > svg {
-        opacity: 100;
-    }
-    
-    /* Sidebar Pin Icon Hover Background */
-    [data-sidebar-target="pinButton"]:hover {
-        background: var(--accent-opacity-15);
-    }
-    
-    /* Form Inputs */
-    [name="commit"] {
-        cursor: pointer;
+    input[type="checkbox"]:disabled:checked {
+        background-color: var(--color-accent);
     }
 
-    .bg-saddle-taupe\/40 {
-        background: var(--accent-opacity-40);
+    input[type="checkbox"]:disabled::after {
+        content: "";
+        position: absolute;
+        top: 0.25em;
+        left: 0.5em;
+        width: 0.3em;
+        height: 0.7em;
+        border-width: 2px;
+        border-width: 0 0.2em 0.2em 0;
+        transform: rotate(45deg);
+        display: none;
     }
 
-    /* Tutorial Components */
+    input[type="checkbox"]:disabled:checked::after {
+        display: block;
+    }
+
+
+    /* Tutorial button */
     #tutorial-help-btn {
+        top: calc(var(--spacing)*8);
+        bottom: none;
         background: var(--neutral-100);
     }
 
@@ -379,360 +341,85 @@
         border-color: transparent;
     }
 
-    /* Forms */
-    input:not([name="commit"]),
-    textarea,
-    select {
-        background: var(--color-surface);
-        border-color: var(--color-border);
-    }
-}
-@-moz-document url-prefix("https://summer.hackclub.com/campfire") {
-    .text-\[\#E65A42\], .text-blue-500.hover\:text-blue-700.underline {
-        color: var(--color-accent);
-    }
-    
-    .bg-blue-500 {
-        background: var(--color-accent);
-    }
-input[type="checkbox"] {
-  appearance: none;
-  width: 1.5em; /* ≈ 24px */
-  height: 1.5em;
-  border: 2px solid var(--color-accent);
-  border-radius: 0.25em;
-  background-color: var(--color-disabled-bg, #e0e0e0);
-  position: relative;
-  cursor: not-allowed;
-  display: inline-block;
-}
-
-input[type="checkbox"]:checked {
-  background-color: var(--color-accent);
-}
-
-input[type="checkbox"]::after {
-  content: "";
-  position: absolute;
-  top: 0.25em;
-  left: 0.5em;
-  width: 0.3em;
-  height: 0.7em;
-  border: solid var(--color-text-primary);
-  border-width: 0 0.2em 0.2em 0;
-  transform: rotate(45deg);
-  display: none;
-}
-
-input[type="checkbox"]:checked::after {
-  display: block;
-}
-
-input[type="checkbox"]:disabled {
-  pointer-events: none;
-}
-
-
-}
-@-moz-document url-prefix("https://summer.hackclub.com/shop") {
-    [class*="card-"] > div:first-child > div:first-child > div:first-child {
-        color: var(--color-text-primary);
-    }
-
-    select {
-        background: var(--color-surface);
-    }
-}
-@-moz-document url-prefix("https://summer.hackclub.com/votes") {
-    .bg-\[\#F6DBBA\] {
-        background: var(--neutral-300);
-    }
-    
-    .bg-\[\#FFE8CD\] {
-        background: var(--neutral-50);
-        color: var(--color-text-primary);
-    }
-
-    .bg-\[\#FFE8CD\] *:has([fill]) {
-        fill: var(--color-text-primary);
-        border-radius: 50%;
-    }
-
-    /* Voting buttons */
-    input[type="radio"]:checked + div {
-        background: var(--accent-opacity-50);
-    }
-
-    div[data-project-index] {
-        background: var(--color-surface);
-    }
-
-    path {
-        fill: var(--color-sidebar);
-    }
-    
-    .report-card-modal  {
-        border: 2px solid var(--color-accent) !important;
-        box-shadow: none;
-        border-radius: 1.125em !important;
-        background: var(--card-background) !important;
-        background-image: none;
-        color: var(--color-text-primary) !important;
-    }
-    
-    .report-card-modal > form span {
-        color: var(--color-text-secondary) !important;
-    }
-    
-    /* Used by AI ticker */
-    div.px-4 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > span:nth-child(1) > svg:nth-child(1) > g:nth-child(1) {
-        stroke: var(--color-accent);
-    }
-    
-    .bg-\[\#4A2D24\],
-    .sm\:p-2 {
-        background: var(--color-sidebar);
-    }
-
-    .bg-\[\#F3ECD8\] {
-        background: var(--neutral-200);
-    }
-    
-    button[title="Report this project for suspicious activity"] {
-        background: var(--primary-400);
-    }
-    
-    button[title="Report this project for suspicious activity"] > svg > path {
-        stroke: var(--color-text-primary);
-    }
-
-    .bg-\[\#F3ECD8\] div {
-        color: var(--color-text-primary);
-    }
-
-    .bg-\[\#FFE8CD\] path:nth-child(2) {
-        fill: currentColor;
-    }
-
-    .bg-\[\#FFE8CD\] path:first-child {
-        fill: transparent;
-    }
-
-    .text-\[\#B89576\] {
-        color: var(--color-text-secondary);
-    }
-
-    #vote_explanation,
-    .text-\[\#FFE8CD\] {
-        color: var(--color-text-primary);
-    }
-    
-    [title="Report this project for suspicious activity"] path {
-        fill: transparent;
-        stroke: var(--color-background);
-    }
-    
-    [title="Report this project for suspicious activity"] {
-        background: var(--primary-400);
-        color: var(--color-background);
-        transition: all 0.5s;
-    }
-    
-    [title="Report this project for suspicious activity"]:hover {
-        background: red;
-    }
-    
-    div.px-4:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > span:nth-child(2),
-    div.px-4:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > span:nth-child(2) {
+    body::before {
         background: var(--color-background);
-        color: var(--color-text-primary);
-        
-        margin-left: 8.5rem;
-        margin-top: -.0125rem;
-    }
-    
-    div.px-4:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > span:nth-child(1) > svg:nth-child(1) path,
-    div.px-4:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > span:nth-child(1) > svg:nth-child(1) path {
-        stroke: var(--color-accent);
-    }
-    
-
-}
-
-@-moz-document url-prefix("https://summer.hackclub.com/explore") {
-    button.text-2xl:nth-child(2) > span:first-child > svg:first-child > path:first-child,
-    .gap-16 > button:first-child > span:first-child > svg:first-child > path:first-child {
-        fill: var(--color-accent);
-    }
-
-    /* Projects */
-    #projects-grid path {
-        fill: var(--color-sidebar);
-    }
-
-    #projects-grid > a > div:first-child > div:nth-child(2) > div:nth-child(3) > div:first-child,
-    #projects-grid > a > div:first-child > div:nth-child(2) > div:nth-child(3) > div:first-child > div:nth-child(2) {
-        background: var(--color-sidebar);
-    }
-
-    #projects-grid button {
-        display: none !important;
-    }
-
-    .text-\[\#4a2d24\] {
-        color: var(--color-text-primary);
-    }
-    
-    .text-\[\#4a2d24\]:nth-child(2),
-    .text-\[\#4a2d24\] button,
-    .text-\[\#4a2d24\] path {
-        color: var(--color-text-secondary);
-    }
-
-    /* Star icons */
-    #devlogs-list > div.card-with-gradient > div.card-content > div.ml-4.cursor-pointer > div g > path {
-        fill: var(--color-warning);
-    }
-
-    .text-\[\#B89576\] {
-        color: var(--color-text-secondary);
-    }
-
-    .text-\[\#865c39\] {
-        color: var(--color-accent);
-    }
-}
-
-@-moz-document url-prefix("https://summer.hackclub.com/my_projects") {
-    .grid > a > div:first-child,
-    div.bg-\[\#F3ECD8\]:nth-child(5) {
-        background: var(--color-surface);
-        border-color: var(--color-accent);
-    }
-
-    .bg-\[\#F3ECD8\] {
-        background: var(--color-surface);
-    }
-
-    [data-project-form-target="yswsSubmissionCheckboxFake"] path {
-        fill: var(--color-text-primary);
-    }
-
-    div.h-5 {
-        background: var(--color-surface);
-        border-color: var(--color-accent);
-        --tw-ring-color: transparent;
-    }
-}
-
-@-moz-document url-prefix("https://summer.hackclub.com/projects") {
-    .bg-\[\#F3ECD8\] {
-        background: var(--color-surface);
-    }
-
-    .card-with-gradient {
-        border: var(--border-width-card) solid var(--card-border);
-        padding: 10px;
-        border-radius: var(--border-radius-card);
-    }
-
-    [data-sidebar-target="links"] path {
-        fill: var(--color-accent);
-    }
-    
-    .btn-pixel {
-        border-radius: var(--border-radius-button);
-        box-shadow: none;
-    }
-
-    .gap-6 path {
-        fill: currentColor;
-    }
-
-    .from-\[\#F3ECD8\] {
-        --tw-gradient-from: var(--color-surface);
-    }
-
-    #ba:hover > #bh {
-        background: var(--surface-opacity-75);
-    }
-
-    #ba:hover #bt {
-        color: var(--color-text-primary) !important;
-    }
-
-    #ba:hover * {
-        cursor: pointer;
-    }
-
-    #bt {
-        color: transparent !important;
-    }
-    
-    button[data-action="click->devlog-card#expand"] {
-        color: var(--color-accent) !important;
-    }
-
-    .text-\[\#4a2d24\] {
-        color: var(--color-text-primary);
-    }
-    
-    .text-\[\#4a2d24\]:nth-child(2),
-    .text-\[\#4a2d24\] button,
-    .text-\[\#4a2d24\] {
-        color: var(--color-text-secondary);
-    }
-
-    [clip-path="url(#clip0_35_306)"] path {
-        fill: currentColor;
-    }
-
-    .text-vintage-red {
-        color: var(--color-blue-700);
-    }
-
-    .text-\[\#B89576\] {
-        color: var(--color-text-secondary);
-    }
-
-    /* Icon filter - needs manual update when accent changes */
-    div.align-center > img:first-child {
-        filter: var(--icon-filter-accent);
-    }
-
-    .border-5 {
-        border-color: var(--color-accent);
-    }
-
-    [data-project-form-target="yswsSubmissionCheckboxFake"] path {
-        fill: var(--color-text-primary);
-    }
-
-    div.h-5 {
-        background: var(--color-surface);
-        border-color: var(--color-accent);
-        --tw-ring-color: transparent;
     }
 }
 
 @-moz-document url-prefix("https://summer.hackclub.com/shop/items") {
-    .bg-soft-bone, .bg-white {
+    .bg-soft-bone,
+    .bg-white {
         background: var(--color-surface);
     }
-    
+
     span.text-2xl:nth-child(2) {
         gap: 4px;
     }
-    
+
     span.ml-2 {
         display: flex;
         align-items: center;
         gap: 4px;
     }
-    
+
     span.inline-flex.items-center.rounded-full.text-xs.font-medium.bg-blue-100.text-blue-800.mt-1 {
         color: var(--color-text-primary);
         background: none;
         border: 2px solid var(--color-accent);
+    }
+}
+
+@-moz-document url-prefix("https://summer.hackclub.com/projects/") {
+    /* Devlog stalk */
+    img[src="/assets/timeline-stalk-99d5587f.svg"] {
+        filter: var(--filter-into-accent);
+    }
+}
+
+@-moz-document url-prefix("https://summer.hackclub.com/explore") {
+    #projects-grid > a > div > div:first-child,
+    #projects-grid > a > div > div:last-child,
+    #projects-grid > a > div > div:nth-child(2) > div:first-child,
+    #projects-grid > a > div > div:nth-child(2) > div:nth-child(2),
+    #projects-grid > a > div > div:nth-child(2) > div:nth-child(4),
+    #projects-grid > a > div > div:nth-child(2) > div:last-child {
+        display: none;
+    }
+}
+
+@-moz-document url-prefix("https://summer.hackclub.com/votes") {
+    div.px-4 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > span:nth-child(1) > svg:nth-child(1) > g:nth-child(1) {
+        stroke: var(--color-accent);
+    }
+
+    .bg-\[\#FFE8CD\] {
+        background: var(--color-surface) !important;
+    }
+
+    div.text-sm:nth-child(1) {
+        color: var(--color-text-primary);
+    }
+
+    div.mx-2:nth-child(2) > div > div:first-child,
+    div.mx-2:nth-child(2) > div > div:last-child,
+    div.mx-2:nth-child(2) > div > div:nth-child(2) > div:first-child,
+    div.mx-2:nth-child(2) > div > div:nth-child(2) > div:nth-child(2),
+    div.mx-2:nth-child(2) > div > div:nth-child(2) > div:nth-child(4),
+    div.mx-2:nth-child(2) > div > div:nth-child(2) > div:last-child {
+        display: none;
+    }
+}
+
+@-moz-document url-prefix("https://summer.hackclub.com/shop") {
+    button[id="music-toggle"] {
+        display: none;
+    }
+}
+
+@-moz-document url-prefix("https://summer.hackclub.com/map") {
+    .card-pixel {
+        box-shadow: none;
+        border-width: 2px;
+        border-radius: var(--radius-2xl);
     }
 }
